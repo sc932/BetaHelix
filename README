@@ -1,0 +1,21 @@
+/*
+ * Reader3
+ * Written by: Scott Clark, Oregon State University, University of California: Davis
+ * (C) 2006
+ *
+ * This program reads in a *.pdb file for a left or right handed beta helix and computes various statistics about it including
+ * The volume (total both approximated with a cylinder and Monte Carlo integration)
+ * The volume of internal side chains
+ * The hydrophobisity of the side chains that point in, as well as those that point out
+ * As well as the hydrophobisity of the burried (non top, bottom, or loop residues)
+ * The Ramachandran Plot of the helix (Phi-Psi angles)
+ * The Ramachandran statistics (how many beta etc)
+ * The Stacking information (what residues lie directly above and below eachother)
+ * Possible sites of Hydrogen bonding
+ *
+ * It writes all of this information out to the terminal
+ * And then makes a *.dat file called stats.dat with the information in it
+ * along with the orientation of the individual resiudes
+ * And in RAM.dat there is the plot if the phi-psi angles in the form:
+ * residueNumber PHI PSI
+ */
